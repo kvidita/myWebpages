@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <title>Tables With Div</title>
+  <style>
+    #charac-table {
+      display: table;
+      width: 100px;
+      height: 100px;
+      border-spacing: 15px;
+    }
+
+    #charac-row {
+      display: table-row;
+      width: 900px;
+      height: 100px;
+    }
+
+    .charac-cell {
+      display: table-cell;
+      border-spacing: 20px;
+    }
+
+    #fake-table {
+      display: table;
+      width: 100px;
+      height: 100px;
+      background-color: hsl(234 100% 87% / 1);
+      border-spacing: 15px;
+    }
+
+    #fake-row {
+      display: table-row;
+      width: 200px;
+      height: 200px;
+      border-spacing: 15px;
+      background-color: cornflowerblue;
+    }
+
+    .fake-cell {
+      display: table-cell;
+      text-align: center;
+      height: 200px;
+      border-spacing: 15px;
+      background-color: hsl(234 100% 76% / 1);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div id="charac-table">
+      <div id="charac-row">
+        <div class="charac-cell">
+          <div id="fake-table">
+            <div id="fake-row">
+              <div class="fake-cell"><img src="../resources/viratKohli.webp" width="200px" height="250px"><br />name:
+                Virat
+                Kohli<br />Profession:
+                Cricketer<br /> </div>
+            </div>
+          </div>
+        </div>
+        <div class="charac-cell">
+          <div id="fake-table">
+            <div id="fake-row">
+              <div class="fake-cell"><img src="../resources/tehriDam.jpeg" width="200px" height="250px"><br />name:
+                Tehri
+                Dam<br />Location: Tehri Dehradun<br /> </div>
+            </div>
+          </div>
+        </div>
+        <div class="charac-cell">
+          <div id="fake-table">
+            <div id="fake-row">
+              <div class="fake-cell"><img src="../resources/hobbies.jpeg" width="200px" height="250px"><br />Topic:
+                Hobbies<br />Hobbies are essential to having a well-rounded life.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>
