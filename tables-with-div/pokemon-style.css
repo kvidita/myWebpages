@@ -1,0 +1,86 @@
+#page {
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(teal, black);
+  background-size: contain;
+}
+
+#Pokemon {
+  height: 118%;
+  text-align: center;
+  border: 0.1em dotted slategray;
+  overflow: scroll;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+#heading {
+  position: sticky;
+  top: 0%;
+}
+
+#cards-table {
+  display: table;
+  margin: 0 auto;
+}
+
+.cards-row {
+  display: table-row;
+}
+
+.cards-cell {
+  width: 250px;
+  height: 415px;
+  display: table-cell;
+  border-spacing: 0.4em;
+}
+
+.cards-cell:hover {
+  transform: scale(1.05);
+}
+
+.card-table {
+  border-radius: 1em;
+  display: table;
+  margin: 0 auto;
+  width: 200px;
+  height: 400px;
+  background-color: rgb(160, 208, 208);
+  border-spacing: 17px;
+}
+
+.look {
+  display: table-row;
+  height: 60%;
+}
+
+.look-cell {
+  display: table-cell;
+  text-align: center;
+  border-radius: 0.5em;
+  background-color: hsl(180, 51%, 80%);
+}
+
+.look-cell>img {
+  width: 200px;
+}
+
+.qualities {
+  line-height: 0.9em;
+  width: 200px;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.character-name {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.quality {
+  font-weight: 500;
+}
+
+.value {
+  text-align: right;
+}
