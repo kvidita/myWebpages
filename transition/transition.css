@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+  height: 99%;
+  border: 3px solid pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.cards {
+  margin: 0 auto;
+  width: 25%;
+  height: 60%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+#avatar {
+  background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 85%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 85%;
+  height: 6%;
+  /* border: 1px solid black; */
+}
+
+.stats * {
+  font-size: 1.3em;
+}
+
+.cards:hover .stats:nth-child(even) {
+  transform: translate(350px, -250px);
+  transition: 1s;
+}
+
+.cards:hover .stats:nth-child(odd) {
+  transform: translate(-350px, -250px);
+  transition: 1s;
+}
