@@ -1,0 +1,73 @@
+:root {
+  --heading-color: #213363;
+  --darkgreen: #17594A;
+  --light-green: #8EAC50;
+  --yellow: #D3D04F;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+#heading-back {
+  width: 100%;
+  height: 10%;
+  background-color: var(--darkgreen);
+}
+
+#heading {
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 4em;
+  font-weight: 700;
+  background-image: url(https://img.freepik.com/premium-photo/close-up-tiger-skin-with-stripes-it_889227-26312.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#jungle-space {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  background-color: black;
+}
+
+#moon {
+  position: relative;
+  top: 40px;
+  left: 400px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end; */
+}
+
+#trees {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#grasses {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}

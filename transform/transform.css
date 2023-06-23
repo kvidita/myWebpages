@@ -102,32 +102,51 @@
   align-content: center;
 }
 
+#translate-demo {
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
 #translate-demo:hover {
   translate: -8em;
-  transition-duration: 1s;
+}
+
+#rotate-demo {
+  transition-duration: 3s;
+  transition-timing-function: ease;
 }
 
 #rotate-demo:hover {
   transform: rotate(540deg);
+}
+
+#scale-demo {
   transition-duration: 3s;
+  transition-timing-function: ease;
 }
 
 #scale-demo:hover {
   transform: scale(2);
+}
+
+#skew-demo {
   transition-duration: 3s;
+  transition-timing-function: ease;
 }
 
 #skew-demo:hover {
   transform: skew(15deg, 15deg);
-  transition-duration: 3s;
+}
+
+#transition-demo {
+  transition-duration: 4s;
+  transition-timing-function: ease;
 }
 
 #transition-demo:hover {
-  translate: -14em;
-  transform: rotate(1080deg);
-  transition-duration: 8s;
-  transition-delay: 4s;
-  transition-timing-function: ease;
+  translate: -25em;
+  transform: rotateY(360deg) skew(15deg);
+  transition-delay: 1s;
 }
 
 #rotate {
