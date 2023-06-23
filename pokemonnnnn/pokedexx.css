@@ -1,3 +1,8 @@
+:root {
+  --light-teal: rgb(77, 168, 168);
+  --lightest-teal: hsl(180, 53%, 74%);
+}
+
 * {
   margin: 0;
   padding: 0%;
@@ -19,7 +24,6 @@
   text-align: center;
   border: 0.1em dotted slategray;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  /* overflow: scroll; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -56,11 +60,7 @@
   padding: 1em;
   margin: 0 auto;
   border-radius: 2em;
-  background-color: rgb(77, 168, 168);
-  /* display: flex;
-  flex-direction: column;
-  align-content: center; */
-
+  background-color: var(--light-teal);
 }
 
 .name {
@@ -73,7 +73,7 @@
 }
 
 .stats {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3em;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -91,7 +91,6 @@
   margin: 0 auto;
   width: 100%;
   height: 60%;
-  border: 1px solid black;
   border-radius: 5em;
   background-color: hsl(180, 53%, 74%);
 }
@@ -103,24 +102,34 @@
   font-size: 1.6em;
 }
 
-.card:hover .property:nth-child(even) {
-  transform: translate(250px, -250px);
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.card:active .property:nth-child(even) {
+  transform: translate(250px, -200px);
   border: 1px solid black;
-  background-color: teal;
+  background-color: var(--lightest-teal);
   border-radius: 0.5em;
   transition: 1s;
   padding: 0.3em;
   z-index: 1;
 }
 
-.card:hover .property:nth-child(odd) {
-  transform: translate(-250px, -250px);
-  background-color: teal;
+.card:active .property:nth-child(odd) {
+  transform: translate(-250px, -170px);
+  background-color: var(--lightest-teal);
   border: 1px solid black;
   border-radius: 0.5em;
   transition: 1s;
   padding: 0.3em;
   z-index: 1;
+}
+
+.cards:has(.card:hover) .card:not(:hover) {
+  filter: blur(2px);
+  transition-duration: 1s;
 }
 
 .quality {

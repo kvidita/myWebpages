@@ -1,0 +1,158 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+#heading {
+  width: 100%;
+  height: 15%;
+  font-size: 4em;
+  font-weight: 500;
+  color: azure;
+  text-align: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page {
+  width: 100%;
+  height: 85%;
+  background-color: hsl(0, 0%, 9%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+#translate {
+  width: 60%;
+  height: 20%;
+  border: 1px dotted white;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#transform {
+  width: 60%;
+  height: 50%;
+  border: 1px dotted white;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#transition {
+  width: 60%;
+  height: 20%;
+  border: 1px dotted white;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.title {
+  width: 20%;
+  height: 100%;
+  font-size: 3em;
+  color: white;
+}
+
+#rotation-title {
+  width: 60%;
+  height: 33%;
+}
+
+#scale-title {
+  height: 33%;
+  width: 60%;
+}
+
+#skew-title {
+  height: 33%;
+  width: 60%;
+}
+
+.description {
+  font-size: 0.5em;
+}
+
+.demo {
+  width: 20%;
+  height: 60%;
+  margin-top: 2em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#translate-demo:hover {
+  translate: -8em;
+  transition-duration: 1s;
+}
+
+#rotate-demo:hover {
+  transform: rotate(540deg);
+  transition-duration: 3s;
+}
+
+#scale-demo:hover {
+  transform: scale(2);
+  transition-duration: 3s;
+}
+
+#skew-demo:hover {
+  transform: skew(15deg, 15deg);
+  transition-duration: 3s;
+}
+
+#transition-demo:hover {
+  translate: -14em;
+  transform: rotate(1080deg);
+  transition-duration: 8s;
+  transition-delay: 4s;
+  transition-timing-function: ease;
+}
+
+#rotate {
+  width: 100%;
+  height: 32%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#scale {
+  width: 100%;
+  height: 32%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#skew {
+  width: 100%;
+  height: 32%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
