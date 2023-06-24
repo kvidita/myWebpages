@@ -24,7 +24,7 @@
   width: 100%;
   height: 48%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
@@ -168,9 +168,9 @@
   margin: 0.5em;
   padding: 3em;
   /* background-color: pink; */
-  /* position: fixed; */
-  position: sticky;
-  top: 0%;
+  position: fixed;
+  /* position: sticky;
+  top: 0%; */
   display: flex;
   flex-direction: column;
 }

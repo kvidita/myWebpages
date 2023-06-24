@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#title {
+  width: 100%;
+  height: 8%;
+  font-size: 3em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-layouts {
+  margin: 0 auto;
+  width: 100%;
+  height: 92%;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 31.7% 31.7% 31.7%;
+  grid-template-rows: 31.7% 31.7% 31.7%;
+  border: 3px solid black;
+  justify-content: center;
+  row-gap: 2%;
+  column-gap: 1%;
+}
+
+.layout {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  border: 1px solid black;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+#layout-1 {
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+}
+
+#layout-2 {
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+}
+
+#layout-3 {
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
+    "header header header"
+    "article nav ads"
+    "footer footer footer";
+}
+
+#layout-4 {
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
+    "header header header"
+    "article nav ads"
+    "footer nav ads";
+}
+
+#layout-5 {
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
+    "nav header header"
+    "nav article ads"
+    "nav footer footer";
+}
+
+#layout-6 {
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 15% 55% 15% 15%;
+  grid-template-areas:
+    "header header"
+    "nav article"
+    "nav ads"
+    "footer footer";
+}
+
+#layout-7 {
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 15% 55% 15% 15%;
+  grid-template-areas:
+    "nav header"
+    "nav article"
+    "nav ads"
+    "nav footer";
+}
+
+#layout-8 {
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 15% 30% 40% 15%;
+  grid-template-areas:
+    "header header"
+    "ads article"
+    "nav article"
+    "nav footer";
+}
+
+#layout-9 {
+  grid-template: 50% 12.5% 12.5% 12.5% 12.5% / 25% 25% 25% 25%;
+  grid-template-areas:
+    "one one one one"
+    "two three four five"
+    "two six four five"
+    "two six seven five"
+    "two six eight nine";
+}
+
+.header,
+.article,
+.ads,
+.footer,
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color: white;
+  border: 1px solid black;
+}
+
+.header {
+  grid-area: header;
+  background-color: #2D4356;
+}
+
+.article {
+  grid-area: article;
+  background-color: #A76F6F;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #435B66;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #EAB2A0;
+  color: black;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: #EAB2A0;
+  color: black;
+}
+
+.block {
+  background-color: #A76F6F;
+  border: 1px solid black;
+  color: white;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
