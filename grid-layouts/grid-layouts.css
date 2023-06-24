@@ -129,7 +129,7 @@ header,
 .article,
 .ads,
 footer,
-.nav {
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +153,7 @@ footer {
   background-color: #435B66;
 }
 
-.nav {
+nav {
   grid-area: nav;
   background-color: #EAB2A0;
   color: black;
