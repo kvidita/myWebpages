@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+#main-page {
+  margin: 0 auto;
+  margin-bottom: 4em;
+  width: 97.8%;
+  height: 200%;
+  background-color: hsl(0, 0%, 89%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+#first-page {
+  width: 100%;
+  height: 48%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+#page-content {
+  width: 100%;
+  height: 100%;
+}
+
+#home-page {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid white; */
+  /* background-color: wheat; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-wrapper {
+  width: 98%;
+  height: 12.3%;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-wrapper {
+  width: 15.6%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#packaging {
+  width: 68%;
+  height: 50.5%;
+  background-color: white;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#search-button {
+  width: 22%;
+  height: 50.5%;
+  background-color: white;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-list {
+  width: 24%;
+  height: 100%;
+  color: white;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#brands {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#company {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#careers {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-logo {
+  width: 12%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.u-svg-fill {
+  fill: #f3f1ee;
+}
+
+#home-space {
+  width: 100%;
+  height: 10%;
+  /* background-color: green; */
+}
+
+#down-arrow {
+  /* background-color: blue; */
+  width: 90%;
+  height: 15%;
+  position: relative;
+  top: 30%;
+}
+
+#multiline-title {
+  width: 60%;
+  height: 50%;
+  margin: 0.5em;
+  padding: 3em;
+  /* background-color: pink; */
+  /* position: fixed; */
+  position: sticky;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-line {
+  width: 100%;
+  height: 33.3%;
+}
+
+#line1 {
+  font-size: 8em;
+  color: white;
+  font-weight: 300;
+}
+
+#line2 {
+  font-size: 8em;
+  color: white;
+  font-weight: 300;
+  text-align: right;
+}
+
+#line3 {
+  font-size: 8em;
+  font-weight: 300;
+  color: white;
+}
+
+#second-page {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: rgb(100, 119, 104);
+}
