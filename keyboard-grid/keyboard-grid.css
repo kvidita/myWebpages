@@ -10,6 +10,11 @@
   width: 100%;
   height: 25%;
   border: 1px solid black;
+  font-size: 3em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #content {
@@ -23,9 +28,154 @@
 #keyboard {
   width: 80%;
   height: 80%;
-  border: 1px solid black;
+  border: 1px solid pink;
   display: grid;
-  grid-template-columns: 3% repeat(25, 2%) 1% 2%;
+  grid-template-columns: 6% repeat(25, 3.5%) 2% 4%;
   grid-template-rows: repeat(5, 13%) 7% 7%;
+  grid-template-areas:
+    "esc touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar touch-bar power-button"
+    "back-tick one one two two three three four four five five six six seven seven eight eight nine nine zero zero minus minus equal equal delete delete delete"
+    "tab tab q q w w e e r r t t y y u u i i o o p p [ [ ] ] back-slash back-slash"
+    "caps-lock caps-lock caps-lock a a s s d d f f g g h h j j k k l l ; ; ' ' return return"
+    "shift shift shift shift z z x x c c v v b b n n m m , , . . forward-slash forward-slash shift shift shift shift"
+    "fn control control option option command command space space space space space space space space space space command command command option option blank blank up-arrow up-arrow blank blank"
+    "fn control control option option command command space space space space space space space space space space command command command option option back-arrow back-arrow down-arrow down-arrow forward-arrow forward-arrow"
+  ;
+  /* gap: 1.5%; */
+  justify-content: center;
 }
 
+#esc {
+  grid-area: esc;
+  border: 1px solid black;
+}
+
+#touch-bar {
+  grid-area: touch-bar;
+  border: 1px solid black;
+}
+
+#power-button {
+  grid-area: power-button;
+  border: 1px solid black;
+}
+
+#back-tick {
+  grid-area: back-tick;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#minus {
+  grid-area: minus;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#delete {
+  grid-area: delete;
+}
+
+.normal-key {
+  border: 1px solid black;
+}
+
+.arrow-key {
+  border: 1px solid black;
+}
+
+#tab {
+  grid-area: tab;
+}
+
+#q {
+  grid-area: q;
+}
+
+#w {
+  grid-area: w;
+}
+
+#e {
+  grid-area: e;
+}
+
+#r {
+  grid-area: r;
+}
+
+#t {
+  grid-area: t;
+}
+
+#y {
+  grid-area: y;
+}
+
+#u {
+  grid-area: u;
+}
+
+#i {
+  grid-area: i;
+}
+
+#o {
+  grid-area: o;
+}
+
+#p {
+  grid-area: p;
+}
+
+#open-sq-bracket {
+  grid-area: open-sq-bracket;
+}
+
+#close-sq-bracket {
+  grid-area: close-sq-bracket;
+}
+
+#back-slash {
+  grid-area: back-slash;
+}
